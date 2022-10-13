@@ -1,0 +1,9 @@
+.titre{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.detailLocataire{
+    border: solid 2px #0D6EFD;
+    border-radius: 30px;
+}
