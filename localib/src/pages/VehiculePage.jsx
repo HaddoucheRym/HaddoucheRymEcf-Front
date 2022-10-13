@@ -9,6 +9,7 @@ import './vehiculePage.css';
 const VehiculePage = () => {
   const [vehicules, setVehicules] = useState([]);
 
+  /* Un crochet qui est appelé après chaque rendu. */
   useEffect(() => {
     findAllVehicule()
   }, [])
@@ -31,9 +32,9 @@ const VehiculePage = () => {
 
   return (
     <>
-     <div className='vehiculePage'>
-    <div className='vehiculeListPage'>La liste des vehicules</div>
-    <div className='vehiculeList-affichage'>
+      <div className='vehiculePage'>
+        <div className='vehiculeListPage'>La liste des vehicules</div>
+        <div className='vehiculeList-affichage'>
           <ul className="tablevehicule">
             <li className='marque'>Marque</li>
             <li className='model'>Model</li>
@@ -45,15 +46,15 @@ const VehiculePage = () => {
             <li></li>
           </ul>
           <hr className='hr-pageVehicule' />
-      {vehicules.map((vehicule, index) => (
-        <VehiculeList key={index} vehicule={vehicule} modifiedVehicule={modifiedVehicule} deleteVehicule={deleteVehicule} />
-      )
-      )
-      }
-      <NavLink to="/addVehicule" >
-        <button className='ajouter'  >Ajouter</button>
-      </NavLink>
-      </div>
+          {vehicules.map((vehicule, index) => (
+            <VehiculeList key={index} vehicule={vehicule} modifiedVehicule={modifiedVehicule} deleteVehicule={deleteVehicule} />
+          )
+          )
+          }
+          <NavLink to="/addVehicule" >
+            <button className='ajouter'  >Ajouter</button>
+          </NavLink>
+        </div>
       </div>
     </>
   )

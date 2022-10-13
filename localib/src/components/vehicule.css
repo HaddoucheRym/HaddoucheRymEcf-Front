@@ -1,55 +1,59 @@
 @media only screen and (min-width: 768px) {
-.informationVehicule {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-left: 50px;
-    align-items: center;
-    margin-right: 50px;
-}
+    .informationVehicule {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 50px;
+        align-items: center;
+        margin-right: 50px;
+    }
 
-.informationVehicule p {
-    width: 100px;
-    display: flex;
-    justify-content: center;
-}
+    .informationVehicule p {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+    }
 
-.modifier{
-    border-radius: 50px;
-    border: none;
-    background-color: rgb(18, 195, 18);
-}
+    .modifier {
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(18, 195, 18);
+    }
 
-.bi{
-    color: white;
-}
+    .bi {
+        color: white;
+    }
 
-.danger{
-border-radius: 50px;
-border: none;
-background-color: red;
-}
+    .danger {
+        border-radius: 50px;
+        border: none;
+        background-color: red;
+    }
 
-.btn-info{
-    border-radius: 50px;
-    border: none;
-    background-color: rgb(225, 177, 56);  
-}
+    .btn-info {
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(225, 177, 56);
+    }
 }
 
 @media only screen and (max-width: 769px) {
-    .typeVehicule{
+    .typeVehicule {
         display: none;
     }
-    .immat{
+
+    .immat {
         display: none;
     }
-    .prix{
+
+    .prix {
         display: none;
     }
-    .etat{
+
+    .etat {
         display: none;
     }
+
     .informationVehicule {
         display: flex;
         justify-content: space-between;
@@ -64,21 +68,20 @@ background-color: red;
         border: none;
         background-color: rgb(18, 195, 18);
     }
-    
+
     .bi {
         color: white;
     }
-    
+
     .danger {
         border-radius: 50px;
         border: none;
         background-color: red;
     }
-    
+
     .btn-info {
         border-radius: 50px;
         border: none;
         background-color: rgb(225, 177, 56);
     }
 }
-

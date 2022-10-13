@@ -5,34 +5,65 @@ import './editVehicule.css';
 const EditVehicule = (props) => {
   const [vehicl, setVehicl] = useState(props.vehicule)
 
+  /**
+   *Lorsque l'utilisateur clique sur le bouton, l'emplacement de véhicule est modifié.
+   */
   const modifVehicul = () => {
     props.modifiedVeh(vehicl)
   }
 
+  /**
+   * Lorsque l'utilisateur modifie la valeur de l'entrée marque, mettez à jour l'état de l'objet vehicl
+   * avec la nouvelle valeur.
+   */
   const handleChangeMarque = (event) => {
     setVehicl({ ...vehicl, marque: event.target.value, })
   }
 
+  /**
+   * Lorsque l'utilisateur modifie la valeur de l'entrée de modèle, mettez à jour la propriété de
+   * modèle de l'objet vehicl avec la nouvelle valeur.
+   */
   const handleChangeModel = (event) => {
     setVehicl({ ...vehicl, model: event.target.value, })
   }
 
+  /**
+   * Lorsque l'utilisateur saisit dans le champ de saisie, mettez à jour la propriété immatriculation
+   * de l'objet vehicl avec la valeur du champ de saisie.
+   */
   const handleChangeImmat = (event) => {
     setVehicl({ ...vehicl, immatriculation: event.target.value, })
   }
 
+  /**
+   * Lorsque l'utilisateur modifie la valeur de l'entrée, mettez à jour l'état du composant avec la
+   * nouvelle valeur.
+   */
   const handleChangePrix = (event) => {
     setVehicl({ ...vehicl, prix: event.target.value, })
   }
 
+  /**
+   * Lorsque l'utilisateur modifie la valeur de l'élément select, mettez à jour l'état du composant
+   * avec la nouvelle valeur.
+   */
   const handleChangeEtat = (event) => {
     setVehicl({ ...vehicl, etat: event.target.value, })
   }
 
+  /**
+    Lorsque l'utilisateur modifie la valeur de disponibilité, mettez à jour l'état du composant
+   * avec la nouvelle valeur.
+   */
   const handleChangeDispo = (event) => {
     setVehicl({ ...vehicl, disponibilite: event.target.value, })
   }
 
+  /**
+   * Lorsque l'utilisateur modifie la valeur de l'entrée typeVehicule, mettez à jour l'état du
+   * composant pour refléter la nouvelle valeur.
+   */
   const handleChangeType = (event) => {
     setVehicl({ ...vehicl, typeVehicule: event.target.value, })
   }

@@ -20,7 +20,7 @@ const Vehicule = (props) => {
           <p className='dispo'>{props.vehicule.disponibilite}</p>
           <p className='typeVehicule'>{props.vehicule.typeVehicule}</p>
           <div className='allButton'>
-          <NavLink to={"/vehicule/" + props.vehicule.id}>
+            <NavLink to={"/vehicule/" + props.vehicule.id}>
               <button type="button" className="btn-info"><i className="bi bi-info-circle"></i></button>
             </NavLink>
             <button className='modifier' onClick={() => props.handleClickEdit(props.vehicule.id)}><i className="bi bi-pencil-square"></i></button>

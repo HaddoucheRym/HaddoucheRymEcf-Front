@@ -19,16 +19,16 @@ const DetailVehicule = () => {
 
   return (
     <>
-    <div className='detailVehicule-total'>
-      <div className='titre'>Detail du Vehicule</div>
-      <div className='detailVehicule'>
-      <p>Marque: {vehicule.marque}</p>
-      <p>Model: {vehicule.model}</p>
-      <p>Immatriculation : {vehicule.immatriculation}</p>
-      <p>Prix: {vehicule.Prix}</p>
-      <p>Disponibilité: {vehicule.disponibilite}</p>
-      <p>Type de véhicule: {vehicule.typeVehicule}</p>
-      </div>
+      <div className='detailVehicule-total'>
+        <div className='titre'>Detail du Vehicule</div>
+        <div className='detailVehicule'>
+          <p>Marque: {vehicule.marque}</p>
+          <p>Model: {vehicule.model}</p>
+          <p>Immatriculation : {vehicule.immatriculation}</p>
+          <p>Prix: {vehicule.Prix}</p>
+          <p>Disponibilité: {vehicule.disponibilite}</p>
+          <p>Type de véhicule: {vehicule.typeVehicule}</p>
+        </div>
       </div>
     </>
   )
