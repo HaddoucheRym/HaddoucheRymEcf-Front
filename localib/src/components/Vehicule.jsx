@@ -14,10 +14,10 @@ const Vehicule = (props) => {
         <div className='informationVehicule'>
           <p>{props.vehicule.marque}</p>
           <p>{props.vehicule.model}</p>
-          <p>{props.vehicule.immatriculation}</p>
-          <p>{props.vehicule.prix}</p>
-          <p>{props.vehicule.etat}</p>
-          <p>{props.vehicule.disponibilite}</p>
+          <p className='immat'>{props.vehicule.immatriculation}</p>
+          <p className='prix'>{props.vehicule.prix}</p>
+          <p className='etat'>{props.vehicule.etat}</p>
+          <p className='dispo'>{props.vehicule.disponibilite}</p>
           <p className='typeVehicule'>{props.vehicule.typeVehicule}</p>
           <div className='allButton'>
           <NavLink to={"/vehicule/" + props.vehicule.id}>
