@@ -1,0 +1,18 @@
+.modificationVehicule {
+    margin-left: 30px;
+}
+
+.validerModif {
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(18, 195, 18);
+    margin-left: 20px;
+    color: white;
+}
+
+#pet-select{
+    border-radius: 30px;
+    border: solid 1px #0D6EFD;
+    height: 40px;
+    width: 20rem;  
+}

@@ -18,8 +18,6 @@ function Locataire(props) {
         <p>{props.locataire.email}</p>
         <p>{props.locataire.phone}</p>
         <div className='allButton'>
-       
-       
         <NavLink to={"/locataire/" + props.locataire.id}>
           <button type="button" className="btn-info"><i className="bi bi-info-circle"></i></button>
         </NavLink>

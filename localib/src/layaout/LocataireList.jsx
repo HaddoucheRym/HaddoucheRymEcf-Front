@@ -15,7 +15,6 @@ const LocataireList = (props) => {
   return (
     <>
       <div className='locataireList'>
-   
         {props.locataire.id === selectId ? <EditLocataire locataire={props.locataire} modifiedLoc={modifiedLoc} /> : <Locataire locataire={props.locataire} deleteLocataires={props.deleteLocataires} handleClickEdit={setSelectId} />}
       </div>
     </>

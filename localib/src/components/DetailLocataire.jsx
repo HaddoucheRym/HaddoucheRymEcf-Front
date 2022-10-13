@@ -20,7 +20,7 @@ const DetailLocataire = () => {
   return (
     <>
     <div className='detailLoctaiare-total'>
-    <div className='titre'>DetailLocataire</div>
+    <div className='titre'>Detail du Locataire</div>
     <div className='detailLocataire'>
     <p>Nom: {locataire.name}</p>
     <p>Pseudo: {locataire.username}</p>
