@@ -106,6 +106,7 @@ const AddVehicule = () => {
             <option value="Voiture">Voiture</option>
             <option value="Moto">Moto</option>
             <option value="Camion">Camion</option>
+            <option value="Utilitaire">Utilitaire</option>
           </select>
 
         </p>

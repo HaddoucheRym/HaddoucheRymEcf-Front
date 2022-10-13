@@ -77,6 +77,7 @@ const EditVehicule = (props) => {
             <option value="Voiture">Voiture</option>
             <option value="Moto">Moto</option>
             <option value="Camion">Camion</option>
+            <option value="Utilitaire">Utilitaire</option>
           </select>
         </p>
         <button className='validerModif' onClick={() => modifVehicul()}>Valider</button>

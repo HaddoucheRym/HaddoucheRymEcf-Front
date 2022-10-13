@@ -34,14 +34,14 @@ const VehiculePage = () => {
      <div className='vehiculePage'>
     <div className='vehiculeListPage'>La liste des vehicules</div>
     <div className='vehiculeList-affichage'>
-          <ul class="tablevehicule">
-            <li>Marque</li>
-            <li >Model</li>
-            <li>Immatr</li>
-            <li>Prix</li>
-            <li>Etat</li>
-            <li>Disponibilité</li>
-            <li>Type</li>
+          <ul className="tablevehicule">
+            <li className='marque'>Marque</li>
+            <li className='model'>Model</li>
+            <li className='immat'>Immatr</li>
+            <li className='prix'>Prix</li>
+            <li className='etat'>Etat</li>
+            <li className='dispo'>Disponibilité</li>
+            <li className='type'>Type</li>
             <li></li>
           </ul>
           <hr className='hr-pageVehicule' />

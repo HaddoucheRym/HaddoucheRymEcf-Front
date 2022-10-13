@@ -48,11 +48,11 @@ function LocatairePage() {
       <div className='locatairePage'>
         <div className='locataireListPage'>La liste des locataires</div>
         <div className='locataireList-affichage'>
-          <ul class="table">
+          <ul className="table">
             <li>Nom</li>
             <li className='pseudo' >Pseudo</li>
             <li>date de naissance</li>
-            <li>email</li>
+            <li className='email'>email</li>
             <li className='telephone'>telephone</li>
             <li></li>
           </ul>

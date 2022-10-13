@@ -13,10 +13,10 @@ function Locataire(props) {
       <div >
         <div className='information'>    
         <p>{props.locataire.name}</p>
-        <p>{props.locataire.username}</p>
+        <p className='pseudo'>{props.locataire.username}</p>
         <p>{props.locataire.date}</p>
-        <p>{props.locataire.email}</p>
-        <p>{props.locataire.phone}</p>
+        <p className='email'>{props.locataire.email}</p>
+        <p className='telephone'>{props.locataire.phone}</p>
         <div className='allButton'>
         <NavLink to={"/locataire/" + props.locataire.id}>
           <button type="button" className="btn-info"><i className="bi bi-info-circle"></i></button>
