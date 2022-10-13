@@ -1,0 +1,38 @@
+.navbar{
+    background-color: #0D6EFD;
+    height: 100px;
+}
+
+.navBarLocalib ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.imgRouter img{
+    width: 80px;
+    border-radius: 50px;
+}
+
+.menu ul{
+
+color: white;
+margin-left: 50px;
+}
+
+.menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border: none 1px;
+    border-radius: 30px;
+    width: 165px;
+    height: 30px;
+    background-color: #B1B1B1;
+    margin-left: 50px;
+}
+
+
