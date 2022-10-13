@@ -17,14 +17,18 @@ function Locataire(props) {
         <p>{props.locataire.date}</p>
         <p>{props.locataire.email}</p>
         <p>{props.locataire.phone}</p>
-        </div>
-        <button type="button" className="btn btn-danger" onClick={() => supprimerLocataire()}>supprimer</button>
-        <button onClick={() => props.handleClickEdit(props.locataire.id)}>modifier</button>
+        <div className='allButton'>
+       
+       
         <NavLink to={"/locataire/" + props.locataire.id}>
-          <button type="button" className="btn btn-info">Info</button>
+          <button type="button" className="btn-info"><i className="bi bi-info-circle"></i></button>
         </NavLink>
-        <hr />
+        <button type = "button" className='modifier' onClick={() => props.handleClickEdit(props.locataire.id)}><i className="bi bi-pencil-square"></i></button>
+        <button type="button" className="danger" onClick={() => supprimerLocataire()}><i className="bi bi-trash"></i></button>
+        </div>
+        </div>
       </div>
+        <hr />
     </>
   )
 }

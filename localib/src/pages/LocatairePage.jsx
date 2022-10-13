@@ -45,6 +45,7 @@ function LocatairePage() {
             <li>date de naissance</li>
             <li>email</li>
             <li>telephone</li>
+            <li></li>
           </ul>
           <hr className='hr-pageLocataire' />
           {locataires.map((locataire, index) => (
@@ -53,7 +54,7 @@ function LocatairePage() {
             )
           }
           <NavLink to="/addLocataire" >
-            <button className='ajouter'  >Ajouter</button>
+            <button className='ajouter'  >Ajouter un locataire</button>
           </NavLink>
         </div>
       </div>

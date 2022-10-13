@@ -1,12 +1,40 @@
-.information{
+.information {
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    margin-left: 10px;
-
+    width: 90%;
+    margin-left: 50px;
+    align-items: center;
+    margin-right: 50px;
 }
 
 .information p {
     width: 100px;
+}
+
+.modifier{
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(18, 195, 18);
+}
+
+.bi{
+    color: white;
+}
+
+.danger{
+border-radius: 50px;
+border: none;
+background-color: red;
+}
+
+.btn-info{
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(225, 177, 56);  
+}
+
+.allButton{
+   
+   
 }
 
