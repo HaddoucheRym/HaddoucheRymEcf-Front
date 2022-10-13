@@ -22,8 +22,7 @@ function App() {
           <Route path="/addLocataire" element={<AddLocataire />} />
           <Route path="/locataire/:id" element={<DetailLocataire />} />
           <Route path="/addVehicule" element={<AddVehicule />} />
-          <Route path="/vehicule/:id" element={<DetailVehicule/>} />
-         
+          <Route path="/vehicule/:id" element={<DetailVehicule />} />
         </Routes>
       </Router>
     </>

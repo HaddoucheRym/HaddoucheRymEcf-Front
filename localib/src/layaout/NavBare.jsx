@@ -15,14 +15,14 @@ const NavBare = () => {
             </li>
             <li>
               <div className="menu" >
-                  <ul>
-                    <li>
-                      <a className="nav-link" aria-current="page" href="/locatairePage">Gestion des locataire</a>
-                    </li>
-                    <li>
-                      <a className="nav-link" aria-current="page" href="/vehiculePage">Gestion des vehicule</a>
-                    </li>
-                  </ul> 
+                <ul>
+                  <li>
+                    <a className="nav-link" aria-current="page" href="/locatairePage">Gestion des locataire</a>
+                  </li>
+                  <li>
+                    <a className="nav-link" aria-current="page" href="/vehiculePage">Gestion des vehicule</a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
