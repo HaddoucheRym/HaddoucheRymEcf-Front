@@ -1,0 +1,12 @@
+.information{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 10px;
+
+}
+
+.information p {
+    width: 100px;
+}
+
