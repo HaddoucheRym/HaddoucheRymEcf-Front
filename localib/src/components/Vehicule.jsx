@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import './vehicule.css';
 
 const Vehicule = (props) => {
 
@@ -9,25 +10,26 @@ const Vehicule = (props) => {
 
   return (
     <>
-    <div >
-
-      <p>
-        Marque: {props.vehicule.marque}
-      </p>
-      <p>
-        Model: {props.vehicule.model}
-      </p>
-      <p>
-        Immatriculation: {props.vehicule.immatriculation}
-      </p>
-
-      <button type="button" className="btn btn-danger" onClick={() => supprimerVehicule()}>supprimer</button>
-      <button onClick={() => props.handleClickEdit(props.vehicule.id)}>modifier</button>
-      <NavLink to={"/vehicule/" + props.vehicule.id}>
-        <button type="button" className="btn btn-info">Info</button>
-      </NavLink>
-    </div>
-  </>
+      <div >
+        <div className='informationVehicule'>
+          <p>{props.vehicule.marque}</p>
+          <p>{props.vehicule.model}</p>
+          <p>{props.vehicule.immatriculation}</p>
+          <p>{props.vehicule.prix}</p>
+          <p>{props.vehicule.etat}</p>
+          <p>{props.vehicule.disponibilite}</p>
+          <p className='typeVehicule'>{props.vehicule.typeVehicule}</p>
+          <div className='allButton'>
+          <NavLink to={"/vehicule/" + props.vehicule.id}>
+              <button type="button" className="btn-info"><i className="bi bi-info-circle"></i></button>
+            </NavLink>
+            <button className='modifier' onClick={() => props.handleClickEdit(props.vehicule.id)}><i className="bi bi-pencil-square"></i></button>
+            <button type="button" className="danger" onClick={() => supprimerVehicule()}><i className="bi bi-trash"></i></button>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </>
   )
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import EditVehicule from '../components/EditVehicule';
 import Vehicule from '../components/Vehicule';
+import './vehiculeList.css';
 
 const VehiculeList = (props) => {
   const [selectIdV, setSelectIdV] = useState();
@@ -13,7 +14,9 @@ const VehiculeList = (props) => {
 
   return (
     <>
-      {props.vehicule.id === selectIdV ? <EditVehicule vehicule={props.vehicule} modifiedVeh={modifiedVeh} /> : <Vehicule vehicule={props.vehicule} deleteVehicule={props.deleteVehicule} handleClickEdit={setSelectIdV} />}
+      <div className='vehiculeList'>
+        {props.vehicule.id === selectIdV ? <EditVehicule vehicule={props.vehicule} modifiedVeh={modifiedVeh} /> : <Vehicule vehicule={props.vehicule} deleteVehicule={props.deleteVehicule} handleClickEdit={setSelectIdV} />}
+      </div>
     </>
   )
 }

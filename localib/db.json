@@ -4,9 +4,9 @@
       "id": 1,
       "name": "Leanne Grahame",
       "username": "Bretttt",
-      "date": "12/05/1989",
-      "email": "Sincere@april.biz",
-      "phone": "1-770-736-8031 x56442"
+      "date": "2022-10-14",
+      "email": "Sincere@april.bizz",
+      "phone": "1-770-736-8031 x564422"
     },
     {
       "id": 2,
@@ -84,22 +84,22 @@
   "vehicule": [
     {
       "id": 1,
-      "marque": "audilala",
+      "marque": "audi",
       "model": "A66",
       "immatriculation": "156_ABK",
-      "etat": "bien",
+      "etat": "B",
       "prix": 35.66,
-      "disponibilite": "dispo",
-      "typeVehicule": "voiture"
+      "disponibilite": "Disponible",
+      "typeVehicule": "Voiture"
     },
     {
       "id": 2,
       "marque": "citroen",
       "model": "C4",
       "immatriculation": "156_ABK",
-      "etat": "bien",
+      "etat": "B",
       "prix": 35.66,
-      "disponibilite": "dispo",
+      "disponibilite": "Pas disponible",
       "typeVehicule": "voiture"
     },
     {
@@ -107,11 +107,20 @@
       "marque": "mercedes",
       "model": "258ftg",
       "immatriculation": "124gfdfgfd",
-      "etat": "tresbien",
+      "etat": "A",
       "prix": "2589.25",
       "disponibilite": "disponible",
-      "typeVehicule": "",
-      "type": "voiture"
+      "typeVehicule": "voiture"
+    },
+    {
+      "id": "858fb81-a7ea-ff05-cf8b-ab417abe1141",
+      "marque": "Reneaut",
+      "model": "Megan",
+      "immatriculation": "158-ggert",
+      "etat": "A",
+      "prix": "85.25",
+      "disponibilite": "Disponible",
+      "typeVehicule": "Voiture"
     }
   ]
 }

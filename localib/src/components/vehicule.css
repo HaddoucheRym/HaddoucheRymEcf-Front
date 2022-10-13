@@ -1,4 +1,4 @@
-.information {
+.informationVehicule {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -7,30 +7,31 @@
     margin-right: 50px;
 }
 
-.information p {
+.informationVehicule p {
     width: 100px;
     display: flex;
     justify-content: center;
 }
 
-.modifier {
+.modifier{
     border-radius: 50px;
     border: none;
     background-color: rgb(18, 195, 18);
 }
 
-.bi {
+.bi{
     color: white;
 }
 
-.danger {
-    border-radius: 50px;
-    border: none;
-    background-color: red;
+.danger{
+border-radius: 50px;
+border: none;
+background-color: red;
 }
 
-.btn-info {
+.btn-info{
     border-radius: 50px;
     border: none;
-    background-color: rgb(225, 177, 56);
+    background-color: rgb(225, 177, 56);  
 }
+

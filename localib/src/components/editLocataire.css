@@ -1,0 +1,11 @@
+.validerModif {
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(18, 195, 18);
+    margin-left: 20px;
+    color: white;
+}
+
+.modificationLocataire {
+    margin-left: 30px;
+}
