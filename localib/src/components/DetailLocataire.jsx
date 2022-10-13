@@ -19,6 +19,7 @@ const DetailLocataire = () => {
 
   return (
     <>
+    <div className='detailLoctaiare-total'>
     <div className='titre'>DetailLocataire</div>
     <div className='detailLocataire'>
     <p>Nom: {locataire.name}</p>
@@ -26,6 +27,7 @@ const DetailLocataire = () => {
     <p> Date de naissance: {locataire.date}</p>
     <p>Email:{locataire.email}</p>
     <p>Telephone: {locataire.phone}</p>
+    </div>
     </div>
     </>
   )
