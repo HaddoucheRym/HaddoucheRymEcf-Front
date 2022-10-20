@@ -14,6 +14,7 @@ const [selectId, setSelectId] = useState();
   return (
     <>
       {props.location.id === selectId ? <EditLocation location={props.location} modifLocation={modifLocation}  /> : <Location location={props.location}  deleteLocation={props.deleteLocation} handleClickEdit={setSelectId} />}
+      {/* <Location location={props.location}  deleteLocation={props.deleteLocation} handleClickEdit={setSelectId} /> */}
     </>
   )
 }

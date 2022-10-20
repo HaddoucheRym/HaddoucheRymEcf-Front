@@ -1,4 +1,8 @@
 .imgVehicule{
     width: 250px;
-   
+}
+
+.etatloc{
+    position: relative;
+    right: 20px;
 }

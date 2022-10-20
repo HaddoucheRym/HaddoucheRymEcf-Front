@@ -1,7 +1,8 @@
 import React from 'react'
+import './location.css';
 
 const Location = (props) => {
-console.log(props);
+  console.log(props);
   const supprimerLocations = () => {
     props.deleteLocation(props.location.id)
   }
@@ -9,33 +10,20 @@ console.log(props);
 
   return (
     <>
-   
-    <table className="table table-striped">
-  <thead>
-  <tr>
-      <th scope="row">1</th>
-      <td>{props.location.locataire}</td>
-      <td>{props.location.vehicule} {props.location.vehiculeModel}</td>
-      <td>{props.location.dateDebut}</td>
-      <td>{props.location.dateFin}</td>
-      <td>{props.location.prixTotal}</td>
-      <td><button type="button" className='modifier' onClick={() => props.handleClickEdit(props.location.id)}><i className="bi bi-pencil-square"></i></button>
-      <button type="button" className="danger" onClick={() => supprimerLocations()}><i className="bi bi-trash"></i></button></td>
-    </tr>
-   
-    
-    {/* <tr>
-      
-      <td>{props.location.locataire}</td>
-   
-      <td>{props.location.vehicule} </td>
-      <td>{props.location.dateDebut}</td>
-      <td>{props.location.dateFin}</td>
-      <td>{props.location.prixTotal}</td>
-    </tr> */}
-  </thead>
-</table>
-
+    <div >
+        <div className='informationLocation'>
+          <p>{props.location.locataire}</p>
+          <p>{props.location.vehicule} {props.location.vehiculeModel}</p>
+          <p className='immat'>{props.location.dateDebut}</p>
+          <p className='prix'>{props.location.dateFin}</p>
+          <p className='dispo'>{props.location.prixTotal}</p>
+          <div className='allButton'>
+            <button type="button" className='modifier' onClick={() => props.handleClickEdit(props.location.id)}><i className="bi bi-pencil-square"></i></button>
+            <button type="button" className="danger" onClick={() => supprimerLocations()}><i className="bi bi-trash"></i></button>
+          </div>
+        </div>
+      </div>
+      <hr />
     </>
   )
 }

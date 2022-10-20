@@ -13,7 +13,7 @@ const LocationVehicule = (props) => {
           <p>{props.vehicule.marque}</p>
           <p>{props.vehicule.model}</p>
           <p className='prix'>{props.vehicule.prix}</p>
-         <p>{props.vehicule.etat}</p>
+         <p className='etatloc'>{props.vehicule.etat}</p>
           <div>
           {props.vehicule.disponibilite ==="Disponible" ?
           <NavLink to = {"/addLocation/" + props.vehicule.id} >

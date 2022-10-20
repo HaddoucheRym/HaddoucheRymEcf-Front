@@ -16,24 +16,24 @@ const AddLocataire = () => {
     phone: ""
   })
 
- /* Un crochet qui est appelé après chaque rendu. */
+  /* Un crochet qui est appelé après chaque rendu. */
   useEffect(() => {
     findAlllocataire()
   }, [])
 
- /**
-  * Il appelle la fonction service.findAll(), qui renvoie une promesse, puis il appelle setLocataires()
-  * avec les données renvoyées par la promesse.
-  */
+  /**
+   * Il appelle la fonction service.findAll(), qui renvoie une promesse, puis il appelle setLocataires()
+   * avec les données renvoyées par la promesse.
+   */
   const findAlllocataire = () => {
     service.findAll().then(data => setLocataires(data))
   }
 
- /**
-  * Lorsque l'utilisateur cliquera sur le bouton, la fonction appellera le service pour publier le
-  * nouvel utilisateur, puis appellera la fonction findAlllocataire pour mettre à jour la liste des
-  * utilisateurs.
-  */
+  /**
+   * Lorsque l'utilisateur cliquera sur le bouton, la fonction appellera le service pour publier le
+   * nouvel utilisateur, puis appellera la fonction findAlllocataire pour mettre à jour la liste des
+   * utilisateurs.
+   */
   const addUser = (newLoctaire) => {
     service.postLocataire(newLoctaire).then(() => {
       findAlllocataire()
@@ -72,10 +72,10 @@ const AddLocataire = () => {
     setNewUser({ ...newUser, email: event.target.value, })
   }
 
- /**
-  * Lorsque l'utilisateur tape dans le champ de saisie, la valeur du champ de saisie est définie sur la
-  * propriété phone de l'objet newUser.
-  */
+  /**
+   * Lorsque l'utilisateur tape dans le champ de saisie, la valeur du champ de saisie est définie sur la
+   * propriété phone de l'objet newUser.
+   */
   const handleChangeTelephone = (event) => {
     setNewUser({ ...newUser, phone: event.target.value, })
   }
@@ -93,7 +93,7 @@ const AddLocataire = () => {
   return (
     <>
       <div className='FormulaireLocataire'>
-      <div className='titreAjout'>Ajouter un locataire</div>
+        <div className='titreAjout'>Ajouter un locataire</div>
         <p>
           <input className='inputNom' type="text" value={newUser.name} onChange={(event) => handleChangeNom(event)} placeholder='Nom' />
         </p>
@@ -109,9 +109,12 @@ const AddLocataire = () => {
         <p>
           <input className='inputNom' type="text" defaultValue={newUser.phone} onChange={(event) => handleChangeTelephone(event)} placeholder='telephone' />
         </p>
-      <NavLink to="/locatairePage" >
-        <button className='ajouter' onClick={handleClickSave} >valider</button>
-      </NavLink>
+        <NavLink to="/locatairePage" >
+          <button className='ajouter' onClick={handleClickSave} >valider</button>
+        </NavLink>
+        <NavLink to="/locatairePage">
+          <button type="button" class="btn btn-danger">Annuler</button>
+        </NavLink>
       </div>
     </>
   )

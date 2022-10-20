@@ -27,7 +27,6 @@
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        /* justify-content: space-evenly; */
         gap: 100px;
         width: 90%;
         font-weight: bold;

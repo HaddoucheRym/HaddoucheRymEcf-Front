@@ -33,6 +33,16 @@
         margin-right: 60px;
     }
 
+    .email{
+        position: relative;
+        right: 25px;
+    }
+
+    .date{
+        position: relative;
+        right: 15px;
+    }
+
     .hr-pageLocataire {
         border: 1px;
     }
@@ -52,11 +62,11 @@
     }
 
     .pseudo {
-       text-align: center;
-       width: 150px;
+        text-align: center;
+        width: 150px;
     }
 
-    
+
 }
 
 @media only screen and (max-width: 769px) {

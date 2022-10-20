@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import LocationList from '../layaout/LocationList';
 import { service } from '../service/service';
+import './locationPage.css';
 
 const LocationPage = () => {
     const [locations, setLocations] = useState([]);
@@ -36,34 +37,35 @@ const LocationPage = () => {
         service.putLocation(location, id).then(() => {
             findAlllocation()
         })
-      }
+    }
 
-      const deleteLocation = (id) => {
+    const deleteLocation = (id) => {
         service.deleteLocation(id).then(() => {
             findAlllocation()
         })
-      }
+    }
 
     return (
         <>
-            <div>La liste des locations</div>
-            <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Locataire</th>
-      <th scope="col">Véhicule</th>
-      <th scope="col">date de debut</th>
-      <th scope="col">date de fin</th>
-      <th scope="col">prix total</th>
-    </tr>
-  </thead>
-  </table>
-            {locations.map((location,  index) => (
-                <LocationList key={index}  location={location}  modifiedLocation={modifiedLocation} deleteLocation ={deleteLocation }/>
-            )
-            )
-            }
+            <div className='locationPage'>
+                <div className='locationListPage'>La liste des locations</div>
+                <div className='locationList-affichage'>
+                    <ul className="tablelocation">
+                        <li className='locataire'>Locataire</li>
+                        <li className='vehicule'>Véhicule</li>
+                        <li className='datededebut'>Date de debut</li>
+                        <li className='datedefin'>Date de fin</li>
+                        <li className='prixtotal'>Prix total</li>
+                        <li></li>
+                    </ul>
+                    <hr className='hr-pageLocation' />
+                    {locations.map((location, index) => (
+                        <LocationList key={index} location={location} modifiedLocation={modifiedLocation} deleteLocation={deleteLocation} />
+                    )
+                    )
+                    }
+                </div>
+            </div>
         </>
 
     )
