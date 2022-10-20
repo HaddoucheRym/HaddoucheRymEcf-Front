@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import AddLocation from './components/addLocation';
 import LocationVehiculePage from './pages/LocationVehiculePage';
 import LocationPage from './pages/LocationPage';
+import PageResponsive from './pages/PageResponsive';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/locationPage" element={<LocationPage/>} />
           <Route path="/addLocation/:id" element={<AddLocation/>} />
           <Route path="/locationVehiculePage" element={<LocationVehiculePage/>} />
+          <Route path="/pageResponsive" element={<PageResponsive/>} />
         </Routes>
       </Router>
     </>

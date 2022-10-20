@@ -83,17 +83,6 @@
   ],
   "vehicule": [
     {
-      "id": 1,
-      "marque": "audi",
-      "model": "A6",
-      "immatriculation": "156_ABK",
-      "etat": "B",
-      "prix": 35.66,
-      "disponibilite": "Disponible",
-      "typeVehicule": "Voiture",
-      "image": "./asset/peugeot.jpg"
-    },
-    {
       "id": 2,
       "marque": "citroen",
       "model": "C4",
@@ -125,6 +114,17 @@
       "disponibilite": "Disponible",
       "typeVehicule": "Voiture",
       "image": "./asset/voiture.jpeg"
+    },
+    {
+      "id": "c3334-a0c1-a48c-db77-b1ecdcb0b18",
+      "marque": "Audi",
+      "model": "A6",
+      "immatriculation": "158_gdt",
+      "etat": "A",
+      "prix": "25.36",
+      "disponibilite": "Disponible",
+      "typeVehicule": "Voiture",
+      "image": "./asset/voiture.jpeg"
     }
   ],
   "location": [
@@ -138,60 +138,6 @@
       "prixTotal": "675"
     },
     {
-      "id": "b603bd0-4f05-6d75-b80a-7063074a5d5",
-      "locataire": "Clementine Bauch",
-      "vehicule": "audi",
-      "vehiculeModel": "a6",
-      "dateDebut": "2022-10-14",
-      "dateFin": "2022-10-29",
-      "prixTotal": 534.9
-    },
-    {
-      "id": "a7a640-a4f1-52db-d78-48335a167de",
-      "locataire": "Ervin Howell",
-      "vehicule": "audi",
-      "vehiculeModel": "A6",
-      "dateDebut": "2022-10-22",
-      "dateFin": "2022-11-06",
-      "prixTotal": 534.9
-    },
-    {
-      "id": "cadc5e-abe6-47a6-b01a-a06bb0cc2dcc",
-      "locataire": "Ervin Howell",
-      "vehicule": "audi",
-      "vehiculeModel": "A6",
-      "dateDebut": "2022-10-21",
-      "dateFin": "2022-10-28",
-      "prixTotal": 249.62
-    },
-    {
-      "id": "d571a02-2b1a-aa1a-376e-4042d226412",
-      "locataire": "Clementine Bauch",
-      "vehicule": "audi",
-      "vehiculeModel": "A6",
-      "dateDebut": "2022-10-07",
-      "dateFin": "2022-10-29",
-      "prixTotal": 784.52
-    },
-    {
-      "id": "cd5d8a-067f-8bbe-c2b-56f503d5b6c4",
-      "locataire": "Clementine Bauch",
-      "vehicule": "audi",
-      "vehiculeModel": "A6",
-      "dateDebut": "2022-10-08",
-      "dateFin": "2022-10-29",
-      "prixTotal": 748.86
-    },
-    {
-      "id": "85718b2-e38-b32d-235b-e4d0067bfcb",
-      "locataire": "Patricia Lebsack",
-      "vehicule": "mercedes",
-      "vehiculeModel": "benz GLC",
-      "dateDebut": "2022-10-19",
-      "dateFin": "2022-10-29",
-      "prixTotal": 25892.5
-    },
-    {
       "id": "aad626-7b75-86f6-74c-2847f3326487",
       "locataire": "Nicholas Runolfsdottir V",
       "vehicule": "Reneaut",
@@ -199,24 +145,6 @@
       "dateDebut": "2022-10-13",
       "dateFin": "2022-10-15",
       "prixTotal": 170.5
-    },
-    {
-      "id": "b276a3-ec14-75a-b7ca-f238d328cc56",
-      "locataire": "Ervin Howell",
-      "vehicule": "audi",
-      "vehiculeModel": "A6",
-      "dateDebut": "2022-10-22",
-      "dateFin": "2022-10-29",
-      "prixTotal": 249.62
-    },
-    {
-      "id": "522c177-66ce-d3d0-d2ea-8f14fa726",
-      "locataire": "Clementina DuBuque",
-      "vehicule": "Reneaut",
-      "vehiculeModel": "Megan",
-      "dateDebut": "2022-10-08",
-      "dateFin": "2022-10-15",
-      "prixTotal": 596.75
     }
   ]
 }

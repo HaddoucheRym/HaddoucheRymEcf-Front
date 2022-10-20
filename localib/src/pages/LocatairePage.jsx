@@ -43,9 +43,9 @@ function LocatairePage() {
           <ul className="table">
             <li>Nom</li>
             <li className='pseudo' >Pseudo</li>
-            <li className='date'>date de naissance</li>
-            <li className='email'>email</li>
-            <li className='telephone'>telephone</li>
+            <li className='date'>Date de naissance</li>
+            <li className='email'>Email</li>
+            <li className='telephone'>Telephone</li>
             <li></li>
           </ul>
           <hr className='hr-pageLocataire' />
