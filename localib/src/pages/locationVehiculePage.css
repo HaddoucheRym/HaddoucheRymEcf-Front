@@ -1,0 +1,78 @@
+@media only screen and (min-width: 768px) {
+    .locationvehiculePage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .locationvehiculeListPage {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .locationvehiculeList-affichage {
+        background-color: #d6cfcf;
+        width: 70rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        border: solid 2px #0D6EFD;
+    }
+
+    .locationvehiculeList-affichage ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+        gap: 100px;
+        width: 90%;
+        font-weight: bold;
+        margin-left: 575px;
+    }
+
+    .hr-pageVehiculelocation {
+        border: 1px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+    .locationvehiculePage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .type {
+        display: none;
+    }
+
+    .immat {
+        display: none;
+    }
+
+    .prix {
+        display: none;
+    }
+
+    .locationvehiculeList-affichage ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        font-weight: bold;
+        margin-right: 100px;
+    }
+
+    .locationvehiculeListPage {
+        font-size: 35px;
+        font-weight: bold;
+    }
+}

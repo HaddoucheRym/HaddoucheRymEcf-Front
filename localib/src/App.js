@@ -8,6 +8,9 @@ import VehiculePage from './pages/VehiculePage';
 import AddVehicule from './components/AddVehicule';
 import DetailVehicule from './components/DetailVehicule';
 import Home from './pages/Home';
+import AddLocation from './components/addLocation';
+import LocationVehiculePage from './pages/LocationVehiculePage';
+import LocationPage from './pages/LocationPage';
 
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
           <Route path="/locataire/:id" element={<DetailLocataire />} />
           <Route path="/addVehicule" element={<AddVehicule />} />
           <Route path="/vehicule/:id" element={<DetailVehicule />} />
+          <Route path="/locationPage" element={<LocationPage/>} />
+          <Route path="/addLocation/:id" element={<AddLocation/>} />
+          <Route path="/locationVehiculePage" element={<LocationVehiculePage/>} />
         </Routes>
       </Router>
     </>

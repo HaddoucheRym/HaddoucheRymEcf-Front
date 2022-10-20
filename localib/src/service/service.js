@@ -1,5 +1,6 @@
 const URL = "http://localhost:3000/locataire";
 const URL2="http://localhost:3000/vehicule";
+const URL3 = "http://localhost:3000/location";
 
 
 export class Service {
@@ -26,6 +27,15 @@ export class Service {
         return fetch(`${URL2}/${id}`).then((res) => res.json())
     }
 
+    findAllLocationS = () => {
+        return fetch(URL3).then((res) => res.json())
+    }
+
+    findIdLocation = (id) => {
+        console.log(id);
+        return fetch(`${URL3}/${id}`).then((res) => res.json())
+    }
+
    /* Suppression d'un locataire de la base de données. */
     deleteLocataire = (id) => {
         return fetch(`${URL}/${id}`, {
@@ -36,6 +46,12 @@ export class Service {
    /* Suppression d'un véhicule de la base de données. */
     deleteVehicule = (id) => {
         return fetch(`${URL2}/${id}`, {
+            method: "DELETE"
+        }).then(res => res.json())
+    }
+
+    deleteLocation = (id) => {
+        return fetch(`${URL3}/${id}`, {
             method: "DELETE"
         }).then(res => res.json())
     }
@@ -58,6 +74,14 @@ export class Service {
         }).then(ress => ress.json())
     }
 
+    putLocation = (element,id) => {
+        return fetch(`${URL3}/${id}`, {
+                method: "PATCH",
+                body: JSON.stringify(element),
+                headers: {"Content-type": "Application/json" }
+        }).then(ress => ress.json())
+    }
+
   /* Une fonction qui prend un utilisateur comme paramètre et renvoie une promesse. */
     postLocataire = (user) => {
         return fetch(URL, {
@@ -72,6 +96,14 @@ export class Service {
         return fetch(URL2, {
             method: "POST",
             body: JSON.stringify(vehicle),
+            headers: { "Content-type": "Application/json" }
+        }).then((res) => res.json())
+    }
+
+    postLocation = (user) => {
+        return fetch(URL3, {
+            method: "POST",
+            body: JSON.stringify(user),
             headers: { "Content-type": "Application/json" }
         }).then((res) => res.json())
     }

@@ -13,7 +13,7 @@ const AddVehicule = () => {
     model: "",
     immatriculation: "",
     etat: "",
-    prix: 0,
+    prix: "",
     disponibilite: "",
     typeVehicule: ""
   })
@@ -118,7 +118,7 @@ const AddVehicule = () => {
             <input className='inputNom' type="text" defaultValue={newVehicl.model} onChange={(event) => handleChangeModel(event)} placeholder='Model' />
           </p>
           <p>
-            <input className='inputNom' type="text" defaultValue={newVehicl.immatriculation} onChange={(event) => handleChangeImmatriculation(event)} placeholder='immatriculation' />
+            <input className='inputNom' type="text" defaultValue={newVehicl.immatriculation} onChange={(event) => handleChangeImmatriculation(event)} placeholder='Immatriculation' />
           </p>
           <p>
             <select name="pets" id="pet-select" value={newVehicl.etat} onChange={(event) => handleChangeEtat(event)}>
@@ -129,7 +129,7 @@ const AddVehicule = () => {
             </select>
           </p>
           <p>
-            <input className='inputNom' type="number" defaultValue={newVehicl.prix} onChange={(event) => handleChangePrix(event)} placeholder='prix' />
+            <input className='inputNom' type="number" defaultValue={newVehicl.prix} onChange={(event) => handleChangePrix(event)} placeholder='Prix' />
           </p>
           <p>
             <select name="pets" id="pet-select" defaultValue={newVehicl.disponibilite} onChange={(event) => handleChangeDisponibilite(event)}>
