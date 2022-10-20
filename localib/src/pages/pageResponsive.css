@@ -1,0 +1,20 @@
+.menuresposive ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.menuresposive li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none 1px;
+    border-radius: 30px;
+    width: 200px;
+    height: 100px;
+    background-color: #B1B1B1;
+    color: white;
+}

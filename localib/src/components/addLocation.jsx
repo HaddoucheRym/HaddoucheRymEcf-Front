@@ -74,13 +74,7 @@ const AddLocation = () => {
     }
 
     
-    
-    const handleClickSave = () => {
-        // console.log(newLocation);
-        setNewLocation({...newLocation, vehicule: vehicules.marque, vehiculeModel: vehicules.model})
-        addLocation(newLocation)
-    }
-    
+   //calculer le prix totale d'une location de voiture par rapport aux dates de locations
     const handleChangePrixTotal = (event) => {
         let date1 = new Date(newLocation.dateDebut);
         let date2 = new Date(newLocation.dateFin);
@@ -91,13 +85,19 @@ const AddLocation = () => {
         console.log(prixF);
         event.target.value = prixF;
         setNewLocation({ ...newLocation, prixTotal: prixF, })
-    //   return  newLocation.prixTotal = prixF;
     }
-       
-        
     
-
-   
+    /**
+     * Je souhaite mettre à jour la disponibilité du véhicule à "Pas disponible" lorsque je clique sur
+     * le bouton "Enregistrer"
+     */
+    const handleClickSave = () => {
+        setNewLocation({...newLocation, vehicule: vehicules.marque, vehiculeModel: vehicules.model})
+        addLocation(newLocation)
+        setVehicules({...vehicules, disponibilite : "Pas disponible" })
+        service.putVehicule(vehicules, selectedVehiculeIdV).then(() => {
+            findVehicule() })
+    }
 
     return (
         <>
@@ -135,7 +135,7 @@ const AddLocation = () => {
                 <input className='inputNom' placeholder='Date de fin' type="date" defaultValue={newLocation.dateFin} onChange={(event) => handleChangeDateFin(event)}  />
                 </p>
                 <p>
-                <input className='inputNom' type="number" defaultValue={newLocation.prixTotal} onChange={(event) => handleChangePrixTotal(event)} placeholder='Prix total'  />
+                <input className='inputNom' type="any" defaultValue={newLocation.prixTotal} onChange={(event) => handleChangePrixTotal(event)} placeholder='Prix total'  />
                 </p>
                 {newLocation.dateDebut <= newLocation.dateFin ? 
                 <NavLink to="/locationPage" >
@@ -143,7 +143,7 @@ const AddLocation = () => {
                 </NavLink> : <p>ce n'est pas valide</p>
                 }
                 <NavLink to= "/locationVehiculePage">
-                <button type="button" class="btn btn-danger">Annuler</button>
+                <button type="button" className="btn btn-danger">Annuler</button>
                 </NavLink>
             </div>
         </>

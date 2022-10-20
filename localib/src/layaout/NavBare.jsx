@@ -34,6 +34,21 @@ const NavBare = () => {
           </ul>
         </div>
       </nav>
+      <nav className='responsive'>
+        <div className="navBarresp">
+          <ul className='imgEtTitreresp'>
+            <li>
+              <a className="imgRouterresp" href="/">
+                <img src={localib} alt="" />
+              </a>
+            </li>
+            <li className='menuresp'>
+              <a href="/pageResponsive"> <i className="bi bi-three-dots"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
     </>
   )
 }

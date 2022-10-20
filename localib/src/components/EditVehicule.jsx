@@ -4,7 +4,7 @@ import './editVehicule.css';
 
 const EditVehicule = (props) => {
   const [vehicl, setVehicl] = useState(props.vehicule)
-
+ 
   /**
    *Lorsque l'utilisateur clique sur le bouton, l'emplacement de véhicule est modifié.
    */

@@ -1,7 +1,12 @@
 @media only screen and (min-width: 768px) {
+    .responsive {
+        display: none;
+    }
+
     .navbar {
         background-color: #0D6EFD;
         height: 100px;
+        display: block;
     }
 
     .navBarLocalib ul {
@@ -37,41 +42,40 @@
 }
 
 @media only screen and (max-width: 769px) {
-    .navbar {
-        background-color: #0D6EFD;
-        height: 100px;
-        width: 100%;
+
+    .navBarLocalib {
+        display: none;
     }
 
-    .imgRouter img {
+    .responsive {
+        display: block;
+        background-color:#0D6EFD ;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .imgEtTitreresp img {
         width: 70px;
         border-radius: 50px;
     }
 
-    .navBarLocalib ul {
+    .navBarresp ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         list-style-type: none;
+        margin-right: 20px;
     }
 
-    .menu ul {
-        color: white;
-        margin-left: 50px;
-    }
-
-    .menu ul li {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        border: none 1px;
-        border-radius: 30px;
-        width: 115px;
-        height: 50px;
+    .bi-three-dots{
         background-color: #B1B1B1;
-        text-align: center;
-        margin-right: 10px;
+        color: black;
+        width: 100px;
+        height: 100px;
     }
+
+    
 }

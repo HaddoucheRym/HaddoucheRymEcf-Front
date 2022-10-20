@@ -17,7 +17,7 @@ const LocationVehicule = (props) => {
           <div>
           {props.vehicule.disponibilite ==="Disponible" ?
           <NavLink to = {"/addLocation/" + props.vehicule.id} >
-          <button type="button" class="btn btn-success">{props.vehicule.disponibilite}</button>
+          <button type="button" className="btn btn-success">{props.vehicule.disponibilite}</button>
           </NavLink> : <p>{props.vehicule.disponibilite}</p>}
           </div>
         </div>
