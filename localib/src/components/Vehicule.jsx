@@ -16,8 +16,8 @@ const Vehicule = (props) => {
           <p>{props.vehicule.model}</p>
           <p className='immat'>{props.vehicule.immatriculation}</p>
           <p className='prix'>{props.vehicule.prix}</p>
-          <p className='etat'>{props.vehicule.etat}</p>
-          <p className='dispo'>{props.vehicule.disponibilite}</p>
+          <p className='etat1'>{props.vehicule.etat}</p>
+          <p className='dispo1'>{props.vehicule.disponibilite}</p>
           <p className='typeVehicule'>{props.vehicule.typeVehicule}</p>
           <div className='allButton'>
             <NavLink to={"/vehicule/" + props.vehicule.id}>

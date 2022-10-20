@@ -1,5 +1,5 @@
 @media only screen and (min-width: 768px) {
-    .informationVehicule {
+    .informationLocation {
         display: flex;
         justify-content: space-between;
         width: 90%;
@@ -9,15 +9,10 @@
         text-align: center
     }
 
-    .informationVehicule p {
+    .informationLocation p {
         width: 100px;
         display: flex;
         justify-content: center;
-    }
-
-    .etat1{
-        position: relative;
-        right: 25px;
     }
 
     .modifier {
@@ -36,17 +31,11 @@
         background-color: red;
     }
 
-    .btn-info {
-        border-radius: 50px;
-        border: none;
-        background-color: rgb(225, 177, 56);
-    }
+   
 }
 
 @media only screen and (max-width: 769px) {
-    .typeVehicule {
-        display: none;
-    }
+    
 
     .immat {
         display: none;
@@ -56,11 +45,11 @@
         display: none;
     }
 
-    .etat1 {
+    .etat {
         display: none;
     }
 
-    .informationVehicule {
+    .informationLocation {
         display: flex;
         justify-content: space-between;
         width: 90%;
@@ -85,9 +74,5 @@
         background-color: red;
     }
 
-    .btn-info {
-        border-radius: 50px;
-        border: none;
-        background-color: rgb(225, 177, 56);
-    }
+
 }

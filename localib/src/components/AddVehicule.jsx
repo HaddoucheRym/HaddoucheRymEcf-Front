@@ -151,6 +151,9 @@ const AddVehicule = () => {
         <NavLink to="/vehiculePage" >
           <button className='ajouter' onClick={handleClickSave} >valider</button>
         </NavLink>
+        <NavLink to="/vehiculePage">
+          <button type="button" class="btn btn-danger">Annuler</button>
+        </NavLink>
       </div>
     </>
   )

@@ -43,7 +43,7 @@ function LocatairePage() {
           <ul className="table">
             <li>Nom</li>
             <li className='pseudo' >Pseudo</li>
-            <li>date de naissance</li>
+            <li className='date'>date de naissance</li>
             <li className='email'>email</li>
             <li className='telephone'>telephone</li>
             <li></li>

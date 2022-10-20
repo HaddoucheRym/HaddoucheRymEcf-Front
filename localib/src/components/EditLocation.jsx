@@ -38,12 +38,13 @@ const findAlllocataire = () => {
     props.modifLocation(loc)
   }
 
-  const handleChangeLocataire= (event) => {
-    setLoc({ ...loc, locataire: event.target.value, })
-  }
 
   const handleChangeVehicule= (event) => {
     setLoc({ ...loc, vehicule: event.target.value, })
+  }
+
+  const handleChangeVehiculeModel= (event) => {
+    setLoc({ ...loc, vehiculeModel: event.target.value, })
   }
 
   const handleChangeDateD = (event) => {
@@ -71,25 +72,15 @@ const findAlllocataire = () => {
 
   return (
     <>
-    <div>EditLocation</div>
     <p>{loc.locataire}</p>
-    <p>{loc.vehicule}</p>
-    <p>
-                    <select name="pets" id="pet-select" value={loc.locataire} onChange={(event) => handleChangeLocataire(event)}>
-                        <option value="">--Locataire--</option>
-                        {locataires.map((locataire, indice) => (
-                            <option key={indice} value={locataire.name}>{locataire.name} </option>
-
-                        )
-                        )}
-                    </select>
-                    </p>
     <p>
       vehicule : <select name="pets" id="pet-select" value={loc.vehicule} onChange={(event) => handleChangeVehicule(event)}>
                         <option value="">--Vehicule--</option>
                         {vehicules.map((vehicule, indice) => (
-                            <option key={indice} value={vehicule.marque}>{vehicule.marque} </option>
-
+                            <><option key={indice} value={vehicule.marque}>{vehicule.marque}<select name="pets" id="pet-select" value={loc.vehiculeModel} onChange={(event) => handleChangeVehiculeModel(event)}>
+                           <option value="">--Model--</option>
+                            <option value={vehicule.model}>{vehicule.model}</option>
+                          </select> </option></>
                         )
                         )}
                     </select>

@@ -2,7 +2,7 @@
   "locataire": [
     {
       "id": 2,
-      "name": "Ervin Howell",
+      "name": "Ervin Howellow",
       "username": "Antonette",
       "date": "12/05/1989",
       "email": "Shanna@melissa.tv",
@@ -129,22 +129,6 @@
   ],
   "location": [
     {
-      "id": "1",
-      "locataire": "Ervin Howell",
-      "vehicule": "mercedes258ftg",
-      "dateDebut": "12/05/2023",
-      "dateFin": "25/05/2023",
-      "prixTotal": "150.5"
-    },
-    {
-      "id": "2",
-      "locataire": "Clementina DuBuque",
-      "vehicule": "Reneau",
-      "dateDebut": "2022-10-13",
-      "dateFin": "2022-10-27",
-      "prixTotal": "348"
-    },
-    {
       "id": "51a822d-467d-28f0-fe3-238afcdb4c7",
       "locataire": "Leanne Grahame",
       "vehicule": "audi",
@@ -161,15 +145,6 @@
       "dateDebut": "2022-10-14",
       "dateFin": "2022-10-29",
       "prixTotal": 534.9
-    },
-    {
-      "id": "657cfd1-b8ca-7edf-4f52-aedfb60f284a",
-      "locataire": "Clementine Bauch",
-      "vehicule": "audi",
-      "vehiculeModel": "a6",
-      "dateDebut": "2022-10-12",
-      "dateFin": "2022-11-06",
-      "prixTotal": 891.4999999999999
     },
     {
       "id": "a7a640-a4f1-52db-d78-48335a167de",
@@ -190,15 +165,6 @@
       "prixTotal": 249.62
     },
     {
-      "id": "5c2bd58-1aea-cfe-ae55-675e6d5c2b3",
-      "locataire": "Mrs. Dennis Schulist",
-      "vehicule": "mercedes",
-      "vehiculeModel": "258ftg",
-      "dateDebut": "2022-10-13",
-      "dateFin": "2022-10-29",
-      "prixTotal": 41428
-    },
-    {
       "id": "d571a02-2b1a-aa1a-376e-4042d226412",
       "locataire": "Clementine Bauch",
       "vehicule": "audi",
@@ -206,6 +172,51 @@
       "dateDebut": "2022-10-07",
       "dateFin": "2022-10-29",
       "prixTotal": 784.52
+    },
+    {
+      "id": "cd5d8a-067f-8bbe-c2b-56f503d5b6c4",
+      "locataire": "Clementine Bauch",
+      "vehicule": "audi",
+      "vehiculeModel": "A6",
+      "dateDebut": "2022-10-08",
+      "dateFin": "2022-10-29",
+      "prixTotal": 748.86
+    },
+    {
+      "id": "85718b2-e38-b32d-235b-e4d0067bfcb",
+      "locataire": "Patricia Lebsack",
+      "vehicule": "mercedes",
+      "vehiculeModel": "benz GLC",
+      "dateDebut": "2022-10-19",
+      "dateFin": "2022-10-29",
+      "prixTotal": 25892.5
+    },
+    {
+      "id": "aad626-7b75-86f6-74c-2847f3326487",
+      "locataire": "Nicholas Runolfsdottir V",
+      "vehicule": "Reneaut",
+      "vehiculeModel": "Megan",
+      "dateDebut": "2022-10-13",
+      "dateFin": "2022-10-15",
+      "prixTotal": 170.5
+    },
+    {
+      "id": "b276a3-ec14-75a-b7ca-f238d328cc56",
+      "locataire": "Ervin Howell",
+      "vehicule": "audi",
+      "vehiculeModel": "A6",
+      "dateDebut": "2022-10-22",
+      "dateFin": "2022-10-29",
+      "prixTotal": 249.62
+    },
+    {
+      "id": "522c177-66ce-d3d0-d2ea-8f14fa726",
+      "locataire": "Clementina DuBuque",
+      "vehicule": "Reneaut",
+      "vehiculeModel": "Megan",
+      "dateDebut": "2022-10-08",
+      "dateFin": "2022-10-15",
+      "prixTotal": 596.75
     }
   ]
 }
