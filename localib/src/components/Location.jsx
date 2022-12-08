@@ -12,8 +12,9 @@ const Location = (props) => {
     <>
     <div >
         <div className='informationLocation'>
-          <p>{props.location.locataire}</p>
-          <p>{props.location.vehicule} {props.location.Model}</p>
+          <p>{props.location.locataire.name}</p>
+          <p>{props.location.vehicule.marque}
+           {props.location.vehicule.model}</p>
           <p className='immat'>{props.location.dateDebut}</p>
           <p className='prix'>{props.location.dateFin}</p>
           <p className='dispo'>{props.location.prixt}</p>
