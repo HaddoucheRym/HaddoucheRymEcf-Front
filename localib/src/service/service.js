@@ -1,6 +1,6 @@
-const URL = "http://localhost:3000/locataire";
-const URL2="http://localhost:3000/vehicule";
-const URL3 = "http://localhost:3000/location";
+const URL = "http://localhost:8080/locataires";
+const URL2="http://localhost:8080/vehicules";
+const URL3 = "http://localhost:8080/locations";
 
 
 export class Service {
